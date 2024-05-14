@@ -1,0 +1,26 @@
+.infinite_scroll {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* white-space-collapse: collapse; */
+    /* text-wrap: nowrap; */
+    gap: 170px;
+    /* height: 120px; */
+    width: max-content;
+    /* transform: translate3d(-25%, 0, 0); */
+    animation: infiniteScroll 30s linear infinite;
+    /* overflow: hidden; */
+}
+
+.infinite_scroll:hover{
+    animation-play-state: paused;
+}
+
+@keyframes infiniteScroll {
+    0% {
+        transform: translate3d(-25%, 0, 0);
+    }
+    100% {
+        transform: translate3d(-75%, 0, 0);
+    }
+}
